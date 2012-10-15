@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass'
+gem 'twitter-bootstrap-rails'
+gem 'bcrypt-ruby', '3.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'haml'
@@ -11,6 +13,9 @@ gem 'haml'
 
 gem 'sqlite3'
 
+group :test do
+	gem 'factory_girl_rails', '4.1.0'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
