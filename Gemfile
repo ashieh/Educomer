@@ -17,6 +17,12 @@ end
 
 group :test do
 	gem 'factory_girl_rails', '4.1.0'
+	gem 'cucumber-rails', :require => false
+	gem 'database_cleaner'
+end
+
+group :test, :development do
+	gem 'rspec-rails', '~> 2.0'
 end
 
 # Gems used only for assets and not required

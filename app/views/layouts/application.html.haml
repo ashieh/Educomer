@@ -11,10 +11,7 @@
     = csrf_meta_tags
     = yield(:head)
   %body
-    %header.navbar.navbar-fixed-top
-      %nav.navbar-inner
-        .container
-          = render 'layouts/header'
+    = render 'layouts/header'
     #main{:role => "main"}
       .container
         .content
@@ -24,3 +21,4 @@
                 %div{:class => "alert alert-#{key}"}= value
               = yield
           %footer
+            = render 'layouts/footer'
