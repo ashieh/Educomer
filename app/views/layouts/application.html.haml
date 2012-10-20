@@ -18,8 +18,7 @@
         .content
           .row
             .span12
-              - flash.each do |key, value|
-                %div{:class => "alert alert-#{key}"}= value
+              = render 'layouts/messages'
               = yield
           %footer
             = render 'layouts/footer'
