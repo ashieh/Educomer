@@ -9,8 +9,6 @@
         = f.input :password, :autocomplete => "off", :required => false
         = f.input :password_confirmation, :required => false
         = f.input :current_password, :required => true
-        - if @user.has_role? :admin
-          = f.input :roles, :as => :select, :collection => Role.all
       .form-actions
         = f.button :submit, "Update"
     %h3 Cancel my account
