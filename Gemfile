@@ -9,6 +9,8 @@ gem 'haml-rails'
 gem 'devise'
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'cancan'
+gem 'rolify'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

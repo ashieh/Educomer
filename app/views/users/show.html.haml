@@ -1,0 +1,4 @@
+%h3 User
+%p Name: #{@user.name}
+%p Email: #{@user.email if @user.email}
+%p Role: #{@user.roles.first.name.titleize}

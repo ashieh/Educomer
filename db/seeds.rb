@@ -31,3 +31,18 @@ foods = [{:name => 'Del Valle Antiox Arndano',:UPC => '750155339426',:ingredient
 foods.each do |food|
 	Food.create!(food)
 end
+
+Role.create([
+  { :name => 'banned' }, 
+  { :name => 'registered' }, 
+  { :name => 'score' },
+  { :name => 'information' },
+  { :name => 'allinfo' },
+  { :name => 'admin'}
+], :without_protection => true)
+user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'please', :password_confirmation => 'please'
+puts 'New user created: ' << user.name
+user2 = User.create! :name => 'Second User', :email => 'user2@example.com', :password => 'please', :password_confirmation => 'please'
+puts 'New user created: ' << user2.name
+user.add_role :admin
+user.remove_role :registered
