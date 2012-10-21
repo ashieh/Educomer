@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'cancan'
 gem 'rolify'
+gem 'factory_girl_rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -33,7 +34,6 @@ group :assets do
 end
 
 group :test do
-	gem 'factory_girl_rails', '4.1.0'
 	gem 'cucumber-rails', :require => false
 	gem 'database_cleaner'
 	gem 'rspec-rails', '~> 2.0'
