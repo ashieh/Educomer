@@ -5,8 +5,10 @@ gem 'bootstrap-sass'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'haml'
+gem 'haml-rails'
 gem 'devise'
 gem 'jquery-rails'
+gem 'simple_form'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
