@@ -1,0 +1,31 @@
+- @foods.each do |food|
+	.container.foodContainer
+		.row.span5{:style => "margin: 0 auto;"}
+			%p #{food.name}
+			%p UPC: #{food.UPC}
+			%p Ingredients: #{food.ingredients}
+			.tabbable
+				%ul.nav.nav-tabs
+					%li.active
+						%a{:href => "#econ", "data-toggle" => "tab"}
+							Economic
+					%li
+						%a{:href => "#gastro", "data-toggle" => "tab"}
+							Gastronomic
+					%li
+						%a{:href => "#nutr", "data-toggle" => "tab"}
+							Nutritional
+				.tab-content
+					#econ.tab-pane.active
+						%p #{food.econ_advice}
+						%p #{food.econ_score}
+					#gastro.tab-pane
+						%p #{food.gastro_advice}
+						%p #{food.gastro_score}
+					#nutr.tab-pane
+						%p #{food.nutr_advice}
+						%p #{food.nutr_score}
+:javascript
+	$(function () {
+		$('#myTab a:last').tab('show');
+	})

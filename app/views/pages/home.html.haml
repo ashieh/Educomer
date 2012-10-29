@@ -2,8 +2,9 @@
 	.row.span6{:style => "text-align: center; margin: 0 auto;"}
 		%h1 Welcome to Educomer!
 		%br
-		%form.form-search
+		.form-search
 			.input-append
-				%input.span3.search-query{:placeholder => "Search Food", :type => "search"}>
-					%button.btn{:type => "button"}>
-						%span.icon-search
+				= form_tag food_index_path, :method => 'get' do
+					= search_field_tag :query, params[:query], :class => 'span3', :class => 'search-query', :placeholder => 'Search Food'
+					= button_tag(:type => 'submit', :class => 'btn') do
+						%i.icon-search

@@ -1,5 +1,11 @@
 class FoodController < ApplicationController
+	#show is 1
+	#index is all of it
 	def index
-		@query_results = Food.search(params[:query])
+		@foods = Food.search(params[:query])
+	end
+
+	def show
+		@food = Food.find(params[:id])
 	end
 end
