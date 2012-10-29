@@ -1,28 +1,30 @@
+- counter = 0
 - @foods.each do |food|
 	.container.foodContainer
+		- counter += 1
 		.row.span5{:style => "margin: 0 auto;"}
 			%p #{food.name}
 			%p UPC: #{food.UPC}
-			%p Ingredients: #{food.ingredients}
+			%p Ingredients:#{food.ingredients}
 			.tabbable
 				%ul.nav.nav-tabs
 					%li.active
-						%a{:href => "#econ", "data-toggle" => "tab"}
+						%a{:href => "#econ#{counter}", "data-toggle" => "tab"}
 							Economic
 					%li
-						%a{:href => "#gastro", "data-toggle" => "tab"}
+						%a{:href => "#gastro#{counter}", "data-toggle" => "tab"}
 							Gastronomic
 					%li
-						%a{:href => "#nutr", "data-toggle" => "tab"}
+						%a{:href => "#nutr#{counter}", "data-toggle" => "tab"}
 							Nutritional
 				.tab-content
-					#econ.tab-pane.active
+					.tab-pane.active{:id => "econ#{counter}"}
 						%p #{food.econ_advice}
 						%p #{food.econ_score}
-					#gastro.tab-pane
+					.tab-pane{:id => "gastro#{counter}"}
 						%p #{food.gastro_advice}
 						%p #{food.gastro_score}
-					#nutr.tab-pane
+					.tab-pane{:id => "nutr#{counter}"}
 						%p #{food.nutr_advice}
 						%p #{food.nutr_score}
 :javascript
