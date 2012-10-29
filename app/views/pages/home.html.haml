@@ -5,6 +5,6 @@
 		.form-search
 			.input-append
 				= form_tag food_index_path, :method => 'get' do
-					= search_field_tag :query, params[:query], :class => 'span3', :class => 'search-query', :placeholder => 'Search Food'
+					= search_field_tag :query, params[:query], :class => 'span4', :class => 'search-query', :placeholder => 'Search Food'
 					= button_tag(:type => 'submit', :class => 'btn', :id => 'submit_query') do
 						%i.icon-search

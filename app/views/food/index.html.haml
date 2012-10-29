@@ -1,33 +1,6 @@
-- counter = 0
 - @foods.each do |food|
-	.container.foodContainer
-		- counter += 1
+	.container.listContainer
 		.row.span5{:style => "margin: 0 auto;"}
 			%p #{food.name}
 			%p UPC: #{food.UPC}
-			%p Ingredients:#{food.ingredients}
-			.tabbable
-				%ul.nav.nav-tabs
-					%li.active
-						%a{:href => "#econ#{counter}", "data-toggle" => "tab"}
-							Economic
-					%li
-						%a{:href => "#gastro#{counter}", "data-toggle" => "tab"}
-							Gastronomic
-					%li
-						%a{:href => "#nutr#{counter}", "data-toggle" => "tab"}
-							Nutritional
-				.tab-content
-					.tab-pane.active{:id => "econ#{counter}"}
-						%p #{food.econ_advice}
-						%p #{food.econ_score}
-					.tab-pane{:id => "gastro#{counter}"}
-						%p #{food.gastro_advice}
-						%p #{food.gastro_score}
-					.tab-pane{:id => "nutr#{counter}"}
-						%p #{food.nutr_advice}
-						%p #{food.nutr_score}
-:javascript
-	$(function () {
-		$('#myTab a:last').tab('show');
-	})
+			= link_to "More about the food", food_path(food)

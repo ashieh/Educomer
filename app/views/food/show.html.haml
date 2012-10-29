@@ -1,0 +1,34 @@
+.container
+	.foodContainer
+		.row.span5{:style => "margin: 0 auto;"}
+			%p #{@food.name}
+			%p UPC: #{@food.UPC}
+			%p Ingredients:#{@food.ingredients}
+			.tabbable
+				%ul.nav.nav-tabs
+					%li.active
+						%a{:href => "#econ", "data-toggle" => "tab"}
+							Economic
+					%li
+						%a{:href => "#gastro", "data-toggle" => "tab"}
+							Gastronomic
+					%li
+						%a{:href => "#nutr", "data-toggle" => "tab"}
+							Nutritional
+				.tab-content
+					.tab-pane.active{:id => "econ"}
+						%p #{@food.econ_advice}
+						%p #{@food.econ_score}
+					.tab-pane{:id => "gastro"}
+						%p #{@food.gastro_advice}
+						%p #{@food.gastro_score}
+					.tab-pane{:id => "nutr"}
+						%p #{@food.nutr_advice}
+						%p #{@food.nutr_score}
+	.row.span8{:style => "text-align: center; margin: 0 auto;"}
+		.form-search
+			.input-append
+				= form_tag food_index_path, :method => 'get' do
+					= search_field_tag :query, params[:query], :class => 'span3', :class => 'search-query', :placeholder => 'Search Food'
+					= button_tag(:type => 'submit', :class => 'btn', :id => 'submit_query') do
+						%i.icon-search
