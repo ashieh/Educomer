@@ -1,10 +1,23 @@
 class Ability
   include CanCan::Ability
-
+  #registered = regular user
+  #banned = banned user
+  #score = can modify scores of food
+  #information = can modify nutrition and ingredient of food + score
+  #allinfo = can modify all fields of food
+  #admin = administrator
   def initialize(user)
     user ||= User.new
     if user.has_role? :admin
         can :manage, :all
+    elsif user.has_role? :score
+        can :update, Food
+    elsif user.has_role? :information
+        can :update, Food
+    elsif user.has_role? :allinfo
+        can :update, Food
+    else
+        can :read, :all
     end
     # Define abilities for the passed in user here. For example:
     #

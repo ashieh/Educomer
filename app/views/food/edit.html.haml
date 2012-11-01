@@ -1,0 +1,32 @@
+%h1 Edit Food
+-#:UPC, :econ_advice, :econ_score, :gastro_advice, :gastro_score, :ingredients, :name, :nutr_advice, :nutr_score
+= form_tag food_path(@food), :method => :put do
+	.form-inputs
+		= label :food, :name
+		= text_field :food, 'name'
+
+		-if current_user.has_role? :admin or current_user.has_role? :information or current_user.has_role? :allinfo
+			= label :food, :econ_advice, 'Economic Advice'
+			= text_area :food, 'econ_advice'
+
+		-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
+			= label :food, :econ_score, 'Economic Score'
+			= select :food, :econ_score, [1, 2, 3, 4, 5]
+
+		-if current_user.has_role? :admin or current_user.has_role? :information or current_user.has_role? :allinfo
+			= label :food, :gastro_advice, 'Gastronomic Advice'
+			= text_area :food, 'gastro_advice'
+
+		-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
+			= label :food, :gastro_score, 'Gastronomic Score'
+			= select :food, :gastro_score, [1, 2, 3, 4, 5]
+
+		-if current_user.has_role? :admin or current_user.has_role? :information or current_user.has_role? :allinfo
+			= label :food, :nutr_advice, 'Nutritional Advice'
+			= text_area :food, 'nutr_advice'
+
+		-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
+			= label :food, :nutr_score, 'Nutritional Score'
+			= select :food, :nutr_score, [1, 2, 3, 4, 5]
+	.form-actions
+		= submit_tag('Update Food Info', :class => 'btn')

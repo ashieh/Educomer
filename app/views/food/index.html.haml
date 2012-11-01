@@ -1,6 +1,6 @@
 - @foods.each do |food|
 	.container.listContainer
-		.row.span5{:style => "margin: 0 auto;"}
+		.well.row.span5{:style => "margin: 0 auto;"}
 			%p #{food.name}
 			%p UPC: #{food.UPC}
 			= link_to "More about the food", food_path(food)
