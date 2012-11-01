@@ -3,6 +3,10 @@ class FoodController < ApplicationController
 	#index is all of it
 	def index
 		@foods = Food.search(params[:query])
+		if @foods.empty?
+			flash[:notice] = "No results found"
+			redirect_to root_path
+		end
 	end
 
 	def show

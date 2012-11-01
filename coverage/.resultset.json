@@ -755,8 +755,8 @@
         null,
         null,
         1,
-        14,
-        14,
+        12,
+        12,
         null,
         0,
         null,
@@ -962,6 +962,10 @@
         1,
         7,
         7,
+        0,
+        null,
+        7,
+        null,
         null,
         0,
         null,
@@ -1009,6 +1013,25 @@
         1,
         0,
         null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
         null
       ],
       "/Users/immachink/rails_projects/educomer/app/models/role.rb": [
@@ -1020,7 +1043,7 @@
         null
       ]
     },
-    "timestamp": 1351488579
+    "timestamp": 1351811242
   },
   "RSpec": {
     "coverage": {
@@ -1623,6 +1646,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -1719,6 +1743,10 @@
         1,
         null
       ],
+      "/Users/immachink/rails_projects/educomer/app/helpers/food_helper.rb": [
+        1,
+        null
+      ],
       "/Users/immachink/rails_projects/educomer/app/helpers/pages_helper.rb": [
         1,
         null
@@ -1732,9 +1760,35 @@
         1,
         null
       ],
-      "/Users/immachink/rails_projects/educomer/app/controllers/pages_controller.rb": [
+      "/Users/immachink/rails_projects/educomer/app/controllers/food_controller.rb": [
+        1,
+        null,
+        null,
         1,
         1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null
       ],
@@ -1743,6 +1797,42 @@
         1,
         1,
         0,
+        null,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/app/models/food.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/spec/controllers/pages_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/app/controllers/pages_controller.rb": [
+        1,
+        1,
         null,
         null
       ],
@@ -1821,6 +1911,23 @@
         null,
         null
       ],
+      "/Users/immachink/rails_projects/educomer/spec/helpers/food_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/immachink/rails_projects/educomer/spec/helpers/pages_helper_spec.rb": [
         1,
         null,
@@ -1856,11 +1963,6 @@
       "/Users/immachink/rails_projects/educomer/spec/models/food_spec.rb": [
         1,
         null,
-        1,
-        null
-      ],
-      "/Users/immachink/rails_projects/educomer/app/models/food.rb": [
-        1,
         1,
         null
       ],
@@ -1978,6 +2080,13 @@
         null,
         null
       ],
+      "/Users/immachink/rails_projects/educomer/spec/views/food/index.html.haml_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/immachink/rails_projects/educomer/spec/views/users/index.html.haml_spec.rb": [
         1,
         null,
@@ -1991,6 +2100,6 @@
         null
       ]
     },
-    "timestamp": 1350860636
+    "timestamp": 1351811110
   }
 }
