@@ -3,7 +3,11 @@ class Food < ActiveRecord::Base
 
 	def self.search(query)
 		if query
-			find(:all, :conditions => ['name ILIKE ?', "%#{query}%"])
+			if Rails.env == "production"
+				find(:all, :conditions => ['name ILIKE ?', "%#{query}%"])
+			else
+				find(:all, :conditions => ['name LIKE ?', "%#{query}%"])
+			end
 		else
 			find(:all)
 		end
