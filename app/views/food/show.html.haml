@@ -28,8 +28,9 @@
 						%p #{@food.nutr_advice}
 						%p 
 							Score: #{@food.nutr_score}
-			-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
-				= link_to('Edit information', edit_food_path(@food), :class => 'btn btn-small')
+			-if user_signed_in?
+				-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
+					= link_to('Edit information', edit_food_path(@food), :class => 'btn btn-small')
 	.row.span8{:style => "text-align: center; margin: 50px auto 0 auto;"}
 		.form-search
 			.input-append

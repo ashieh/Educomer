@@ -10,7 +10,15 @@ class FoodController < ApplicationController
 	end
 
 	def edit
-		@food = Food.find(params[:id])
+		if user_signed_in?
+			if current_user.has_role? :registered or current_user.has_role? :banned
+				redirect_to food_path(Food.find(params[:id]))
+			else
+				@food = Food.find(params[:id])
+			end
+		else
+			redirect_to food_path(Food.find(params[:id]))
+		end
 	end
 
 	def update
