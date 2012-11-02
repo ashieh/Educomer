@@ -11,7 +11,7 @@
 
 		-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
 			= label :food, :econ_score, 'Economic Score'
-			= select :food, :econ_score, [1, 2, 3, 4, 5]
+			= select :food, :econ_score, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 		-if current_user.has_role? :admin or current_user.has_role? :information or current_user.has_role? :allinfo
 			= label :food, :gastro_advice, 'Gastronomic Advice'
@@ -19,7 +19,7 @@
 
 		-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
 			= label :food, :gastro_score, 'Gastronomic Score'
-			= select :food, :gastro_score, [1, 2, 3, 4, 5]
+			= select :food, :gastro_score, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 		-if current_user.has_role? :admin or current_user.has_role? :information or current_user.has_role? :allinfo
 			= label :food, :nutr_advice, 'Nutritional Advice'
@@ -27,6 +27,6 @@
 
 		-if current_user.has_role? :admin or current_user.has_role? :score or current_user.has_role? :information or current_user.has_role? :allinfo
 			= label :food, :nutr_score, 'Nutritional Score'
-			= select :food, :nutr_score, [1, 2, 3, 4, 5]
+			= select :food, :nutr_score, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	.form-actions
 		= submit_tag('Update Food Info', :class => 'btn')
