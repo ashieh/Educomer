@@ -1008,6 +1008,10 @@
         null,
         1,
         7,
+        7,
+        0,
+        0,
+        null,
         null,
         null,
         1,
@@ -1043,7 +1047,7 @@
         null
       ]
     },
-    "timestamp": 1351811242
+    "timestamp": 1351881471
   },
   "RSpec": {
     "coverage": {
@@ -1766,6 +1770,10 @@
         null,
         1,
         1,
+        1,
+        0,
+        0,
+        null,
         null,
         null,
         1,
@@ -1925,7 +1933,6 @@
         null,
         null,
         1,
-        1,
         null
       ],
       "/Users/immachink/rails_projects/educomer/spec/helpers/pages_helper_spec.rb": [
@@ -2084,7 +2091,6 @@
         1,
         null,
         1,
-        1,
         null
       ],
       "/Users/immachink/rails_projects/educomer/spec/views/users/index.html.haml_spec.rb": [
@@ -2100,6 +2106,6 @@
         null
       ]
     },
-    "timestamp": 1351811110
+    "timestamp": 1351879597
   }
 }
