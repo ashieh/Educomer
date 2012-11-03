@@ -7,17 +7,17 @@ Feature: search for food
 Background: foods have been added to database 
 
   Given the following foods exist:
-  | name                   | UPC | ingredients 					|
-  | Acorn                  | 1   | Nuts  						|
-  | Cookie				   | 2   | Milk, Eggs 					|
-  | Chocolate Acorn		   | 3   | Chocolate, Nuts 				|
-  | Chocolate Ice Cream    | 4   | Milk, Chocolate, Ice, Cream  |
-  | Chocolate              | 5   | Chocolate, Deliciousness     |
-  | Peanut Butter          | 6   | Peanuts, Butter  			|
-  | Egg					   | 7   | Baby Chicken  				|
-  | Milk        		   | 8   | Cow Hormones   				|
-  | Milky Way 			   | 9   | Chocolate, Tylenol  			|
-  | Coca Cola              | 10  | Pepsi  						|
+  | name                   | UPC | ingredients 					|nutr_score|econ_score|gastro_score|nutr_advice |econ_advice|gastro_advice|
+  | Acorn                  | 1   | Nuts  						|1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
+  | Cookie				   | 2   | Milk, Eggs 					|3		   |4		  |8		   |no nutrition|expensive  |funny shape  |
+  | Chocorate Acorn		   | 3   | Chocolate, Nuts 				|4		   |4		  |4		   |no nutrition|expensive  |funny shape  |
+  | Chocorate Ice Cream    | 4   | Milk, Chocolate, Ice, Cream  |10		   |10		  |10		   |super good  |cheap      |delicious    |
+  | Chocorate              | 5   | Chocolate, Deliciousness     |1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
+  | Peanut Butter          | 6   | Peanuts, Butter  			|1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
+  | Egg					   | 7   | Baby Chicken  				|1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
+  | Milk        		   | 8   | Cow Hormones   				|1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
+  | Milky Way 			   | 9   | Chocolate, Tylenol  			|1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
+  | Poca Pola              | 10  | Pepsi  						|1		   |1		  |1		   |no nutrition|expensive  |funny shape  |
 
 
 Scenario: Search for an exact match
@@ -34,11 +34,11 @@ Scenario: Search for a substring
 	
 Scenario: Search for multiple results
 	When I am on the home page
-	And I fill in "query" with "Chocolate"
+	And I fill in "query" with "Chocorate"
 	And I press "submit_query"
-	Then I should see "Chocolate"
-	Then I should see "Chocolate Acorn"
-	Then I should see "Chocolate Ice Cream"
+	Then I should see "Chocorate"
+	Then I should see "Chocorate Acorn"
+	Then I should see "Chocorate Ice Cream"
 	
 Scenario: Search for substring
 	When I am on the home page
@@ -49,22 +49,22 @@ Scenario: Search for substring
 	
 Scenario: Search for ingredients
 	When I am on the home page
-	And I fill in "query" with "Coca Cola"
+	And I fill in "query" with "Poca Pola"
 	And I press "submit_query"
-	Then I should see "Coca Cola"
+	Then I should see "Poca Pola"
 	And I should see "Pepsi"
 	
 Scenario: Search for ingredients in multiple results
 	When I am on the home page
-	And I fill in "query" with "Chocolate"
+	And I fill in "query" with "Chocorate"
 	And I press "submit_query"
-	Then I should see "Chocolate"
-	And I should see "Deliciousness"
-	And I should see "Ice"
-	And I should see "Nuts"
+	Then I should see "Chocorate"
+	Then I should see "Chocorate Acorn"
+	When I follow "More about Chocorate"
+	Then I should see "Deliciousness"
 	
-Scenario: Search for UPC
+Scenario: Search by UPC
 	When I am on the home page
-	And I fill in "query" with "Acorn"
+	And I fill in "query" with "1"
 	And I press "submit_query"
-	Then I should see "1"
+	Then I should see "Acorn"
