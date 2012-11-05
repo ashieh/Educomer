@@ -49,19 +49,11 @@ Scenario: Search for substring
 	
 Scenario: Search for ingredients
 	When I am on the home page
-	And I fill in "query" with "Coca Cola"
+	And I fill in "query" with "Milk"
 	And I press "submit_query"
-	Then I should see "Coca Cola"
-	And I should see "Pepsi"
-	
-Scenario: Search for ingredients in multiple results
-	When I am on the home page
-	And I fill in "query" with "Chocolate"
-	And I press "submit_query"
-	Then I should see "Chocolate"
-	And I should see "Deliciousness"
-	And I should see "Ice"
-	And I should see "Nuts"
+	Then I should see "Milk"
+	When I follow "More about the food"
+	And I should see "Cow"
 	
 Scenario: Search for UPC
 	When I am on the home page
