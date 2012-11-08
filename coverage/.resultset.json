@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/ubuntu/Desktop/educomer/config/environment.rb": [
+      "/Users/immachink/rails_projects/educomer/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/ubuntu/Desktop/educomer/config/application.rb": [
+      "/Users/immachink/rails_projects/educomer/config/application.rb": [
         1,
         null,
         1,
@@ -75,7 +75,7 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/boot.rb": [
+      "/Users/immachink/rails_projects/educomer/config/boot.rb": [
         1,
         null,
         null,
@@ -83,7 +83,7 @@
         null,
         1
       ],
-      "/home/ubuntu/Desktop/educomer/config/environments/development.rb": [
+      "/Users/immachink/rails_projects/educomer/config/environments/development.rb": [
         1,
         null,
         1,
@@ -123,7 +123,7 @@
         1,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/backtrace_silencers.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -132,7 +132,7 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/devise.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -351,23 +351,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -384,14 +367,31 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/mime_types.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/rolify.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/config/initializers/rolify.rb": [
         1,
         null,
         null,
@@ -401,7 +401,7 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/secret_token.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -410,7 +410,7 @@
         null,
         1
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/session_store.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -420,7 +420,7 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/simple_form.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/simple_form.rb": [
         null,
         1,
         null,
@@ -532,102 +532,6 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/Desktop/educomer/config/initializers/wrap_parameters.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/Desktop/educomer/spec/factories/users.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/Desktop/educomer/config/routes.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -660,7 +564,103 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/models/user.rb": [
+      "/Users/immachink/rails_projects/educomer/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/spec/factories/users.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/config/routes.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/immachink/rails_projects/educomer/app/models/user.rb": [
         1,
         null,
         null,
@@ -693,7 +693,7 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/features/support/paths.rb": [
+      "/Users/immachink/rails_projects/educomer/features/support/paths.rb": [
         1,
         null,
         null,
@@ -702,10 +702,10 @@
         null,
         null,
         1,
-        7,
+        6,
         null,
         null,
-        7,
+        6,
         null,
         null,
         0,
@@ -734,39 +734,39 @@
         null,
         1
       ],
-      "/home/ubuntu/Desktop/educomer/features/step_definitions/food_steps.rb": [
+      "/Users/immachink/rails_projects/educomer/features/step_definitions/food_steps.rb": [
         1,
-        7,
+        6,
         null,
-        70,
+        60,
         null,
-        null,
-        null,
-        1,
-        7,
         null,
         null,
         1,
-        7,
+        6,
         null,
         null,
         1,
-        7,
+        6,
         null,
         null,
         1,
-        1,
+        6,
         null,
         null,
         1,
-        13,
-        13,
+        10,
+        10,
         null,
         0,
         null,
+        null,
+        null,
+        1,
+        1,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/features/step_definitions/user_steps.rb": [
+      "/Users/immachink/rails_projects/educomer/features/step_definitions/user_steps.rb": [
         null,
         null,
         1,
@@ -959,35 +959,30 @@
         0,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/models/food.rb": [
+      "/Users/immachink/rails_projects/educomer/app/models/food.rb": [
         1,
         1,
         null,
         1,
-        7,
-        7,
-        null,
-        1,
-        null,
+        6,
         6,
         0,
         null,
         6,
         null,
         null,
-        null,
         0,
         null,
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/controllers/pages_controller.rb": [
+      "/Users/immachink/rails_projects/educomer/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/controllers/application_controller.rb": [
+      "/Users/immachink/rails_projects/educomer/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -995,39 +990,36 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/helpers/application_helper.rb": [
+      "/Users/immachink/rails_projects/educomer/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/helpers/food_helper.rb": [
+      "/Users/immachink/rails_projects/educomer/app/helpers/food_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/helpers/pages_helper.rb": [
+      "/Users/immachink/rails_projects/educomer/app/helpers/pages_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/helpers/users_helper.rb": [
+      "/Users/immachink/rails_projects/educomer/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/controllers/food_controller.rb": [
+      "/Users/immachink/rails_projects/educomer/app/controllers/food_controller.rb": [
         1,
         null,
         null,
         1,
-        7,
-        7,
+        6,
+        6,
         0,
         0,
-        7,
-        null,
-        4,
         null,
         null,
         null,
         1,
-        5,
+        1,
         null,
         null,
         1,
@@ -1050,7 +1042,7 @@
         null,
         null
       ],
-      "/home/ubuntu/Desktop/educomer/app/models/role.rb": [
+      "/Users/immachink/rails_projects/educomer/app/models/role.rb": [
         1,
         1,
         1,
@@ -1059,7 +1051,7 @@
         null
       ]
     },
-    "timestamp": 1351904215
+    "timestamp": 1352083705
   },
   "RSpec": {
     "coverage": {
@@ -1782,6 +1774,10 @@
         null,
         1,
         1,
+        1,
+        0,
+        0,
+        null,
         null,
         null,
         1,
@@ -1941,7 +1937,6 @@
         null,
         null,
         1,
-        1,
         null
       ],
       "/Users/immachink/rails_projects/educomer/spec/helpers/pages_helper_spec.rb": [
@@ -2100,7 +2095,6 @@
         1,
         null,
         1,
-        1,
         null
       ],
       "/Users/immachink/rails_projects/educomer/spec/views/users/index.html.haml_spec.rb": [
@@ -2116,6 +2110,6 @@
         null
       ]
     },
-    "timestamp": 1351811110
+    "timestamp": 1352083719
   }
 }

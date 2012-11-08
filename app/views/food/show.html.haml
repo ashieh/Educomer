@@ -16,15 +16,15 @@
 						%a{:href => "#nutr", "data-toggle" => "tab"}
 							Nutritional
 				.tab-content.well
-					.tab-pane.active{:id => "econ"}
+					.tab-pane.active#econ
 						%p #{@food.econ_advice}
 						%p 
 							Score: #{@food.econ_score}
-					.tab-pane{:id => "gastro"}
+					.tab-pane#gastro
 						%p #{@food.gastro_advice}
 						%p 
 							Score: #{@food.gastro_score}
-					.tab-pane{:id => "nutr"}
+					.tab-pane#nutr
 						%p #{@food.nutr_advice}
 						%p 
 							Score: #{@food.nutr_score}
