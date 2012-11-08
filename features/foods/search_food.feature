@@ -28,9 +28,9 @@ Scenario: Search for an exact match
 	
 Scenario: Search for a substring
 	When I am on the home page
-	And I fill in "query" with "Coca"
+	And I fill in "query" with "Poca"
 	And I press "submit_query"
-	Then I should see "Coca Cola"
+	Then I should see "Poca Pola"
 	
 Scenario: Search for multiple results
 	When I am on the home page
