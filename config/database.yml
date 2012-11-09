@@ -8,6 +8,9 @@ development:
   database: db/development.sqlite3
   pool: 5
   timeout: 5000
+  charset: latin1
+  encoding: latin1
+  collation: latin1_general_ci
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,12 +20,18 @@ test: &test
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
+  charset: latin1
+  encoding: latin1
+  collation: latin1_general_ci
 
 production:
   adapter: sqlite3
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+  charset: latin1
+  encoding: latin1
+  collation: latin1_general_ci
 
 cucumber:
   <<: *test
