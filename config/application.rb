@@ -60,7 +60,7 @@ module Educomer
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = false
-    config.action_controller.default_charset = 'ISO-8859-1'
+    config.action_controller.default_charset = 'UTF-8'
 
   end
 end

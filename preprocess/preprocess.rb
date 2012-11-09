@@ -11,7 +11,7 @@ else
 end
 
 file = File.open("../db/seeds.rb", "wb")
-file.write("#encoding: iso-8859-1\n")
+file.write("#encoding: UTF-8\n")
 #ignores non-ascii characters
 
 
@@ -42,5 +42,3 @@ file.write "foods.each do |food|\n"
 file.write "\tFood.create!(food)\n"
 file.write "end"
 file.close
-
-#~ x{recode L1..UTF-8 ../db/seeds.rb}
