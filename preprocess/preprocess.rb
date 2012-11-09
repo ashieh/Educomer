@@ -43,4 +43,4 @@ file.write "\tFood.create!(food)\n"
 file.write "end"
 file.close
 
-#~ %x{recode L1..UTF-8 ../db/seeds.rb}
+#~ x{recode L1..UTF-8 ../db/seeds.rb}
