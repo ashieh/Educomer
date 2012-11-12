@@ -5,7 +5,7 @@ class FoodController < ApplicationController
 		@foods = Food.search(params[:query])
 		if @foods.empty?
 			flash[:notice] = "No results found"
-			redirect_to root_path
+			redirect_to :back
 		elsif @foods.length == 1
 			#if only one result, go straight to page
 			redirect_to food_path(@foods[0])
@@ -14,6 +14,7 @@ class FoodController < ApplicationController
 
 	def show
 		@food = Food.find(params[:id])
+		@decode = ZXing.decode "#{Rails.root}/app/assets/images/#{@food.UPC}~2.JPG"
 	end
 
 	def edit

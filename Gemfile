@@ -13,6 +13,7 @@ gem 'cancan'
 gem 'rolify'
 gem 'factory_girl_rails'
 gem 'simplecov', :require => false, :group => :test
+gem 'zxing'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
