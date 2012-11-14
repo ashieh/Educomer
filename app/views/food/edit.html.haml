@@ -5,6 +5,10 @@
 		= label :food, :name
 		= text_field :food, 'name'
 
+		-if current_user.has_role? :admin or current_user.has_role? :allinfo
+			= label :food, :ingredients, 'Ingredients'
+			= text_area :food, 'ingredients'
+
 		-if current_user.has_role? :admin or current_user.has_role? :information or current_user.has_role? :allinfo
 			= label :food, :econ_advice, 'Economic Advice'
 			= text_area :food, 'econ_advice'

@@ -14,7 +14,7 @@ class FoodController < ApplicationController
 
 	def show
 		@food = Food.find(params[:id])
-		@decode = ZXing.decode "#{Rails.root}/app/assets/images/#{@food.UPC}~2.JPG"
+		#@decode = ZXing.decode "#{Rails.root}/app/assets/images/#{@food.UPC}~2.JPG"
 	end
 
 	def edit
