@@ -1,6 +1,6 @@
 .container
 	.row.span6{:style => "text-align: center; margin: 0 auto;"}
-		%h1 Welcome to Educomer!
+		%h1{:style => "color: black;"} Welcome to Educomer!
 		%br
 		.form-search
 			.input-append
@@ -8,3 +8,8 @@
 					= search_field_tag :query, params[:query], :class => 'span4', :class => 'search-query', :placeholder => 'Search Food'
 					= button_tag(:type => 'submit', :class => 'btn', :id => 'submit_query') do
 						%i.icon-search
+
+	%iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "http://www.youtube.com/embed/PqWvfXkGmq0", :width => "560"}
+
+.lrdiscoverwidget{"data-background" => "on", "data-css" => "", "data-logo" => "on", "data-share-url" => "www.alimentarte.mx/form", :rel => "W15GW1SQ"}
+%script{:src => "http://launchrock-ignition.s3.amazonaws.com/ignition.1.1.js", :type => "text/javascript"}
