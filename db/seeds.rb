@@ -33,6 +33,31 @@ foods.each do |food|
 	Food.create!(food)
 end
 
+ingredients = [{:name=>'sorbato de potasio', :adv1=>'Aceite aromático extraido de la planta', :adv2=>'Puede que ayude a prevenir la fibromalgia', :adv3=>'Pariente del crémor tártaro usado en cocina', :adv4=>'Se usan almidones modificados para crear adhesivos', :adv5=>'Algunos se usan para crear papel, planchar ropa'},
+{:name=>'sabor natural a chocolate', :adv1=>'Edulcorante también conocido como acelsulfame-K', :adv2=>'Mejor conocido como acelsulfamo-k, endulza tus alimentos sin calorías', :adv3=>'Edulcorante artificial 200 veces más dulce que el azúcar', :adv4=>'Edulcorante artificial favorito en cocina y bebidas carbonatadas', :adv5=>'Considerado seguro por autoridades, no se recomienda consumir en exceso'},
+{:name=>'carragenina', :adv1=>'Edulcorante también conocido como acelsufame', :adv2=>'Mejor conocido como acelsulfamo-k, endulza tus alimentos sin calorías', :adv3=>'Edulcorante artificial 200 veces más dulce que el azúcar', :adv4=>'Edulcorante artificial favorito en cocina y bebidas carbonatadas', :adv5=>'Considerado seguro por autoridades, no se recomienda consumir en exceso'},
+{:name=>'acelsulfame', :adv1=>'Edulcorante también conocido como acelsufame', :adv2=>'Mejor conocido como acelsulfamo-k, endulza tus alimentos sin calorías', :adv3=>'Edulcorante artificial 200 veces más dulce que el azúcar', :adv4=>'Edulcorante artificial favorito en cocina y bebidas carbonatadas', :adv5=>'Considerado seguro por autoridades, no se recomienda consumir en exceso'},
+{:name=>'citrato de sodio', :adv1=>'Vitamina C', :adv2=>'Importante para huesos y dientes', :adv3=>'Protege contra infecciones', :adv4=>'¡Muy saludabe!', :adv5=>'Su falta produce escorbuto'},
+{:name=>'benzoato de sodio', :adv1=>'Es un acidulante que se usa para mejorar la sensación de dulzura y el sabor', :adv2=>'Es un antioxidante que ayuda a manter en buen estado los alimentos', :adv3=>'Se obtiene del jugo de frutas cìtricas, o fermentando azúcares', :adv4=>'Muy buen conservador usado en el envasado de alimentos', :adv5=>''},
+{:name=>'acido citrico', :adv1=>'Es un acidulante que se usa para mejorar la sensación de dulzura y el sabor', :adv2=>'Es un antioxidante que ayuda a manter en buen estado los alimentos', :adv3=>'Se obtiene del jugo de frutas cìtricas, o fermentando azúcares', :adv4=>'Muy buen conservador usado en el envasado de alimentos', :adv5=>''},
+{:name=>'sucralosa', :adv1=>'Otro nombre de la vitamina B9', :adv2=>'Vitamina muy importante durante el embarazo', :adv3=>'Ayuda a la formación de glóbulos rojos en tu organismo', :adv4=>'Vitamina B6 con la que se fortifican muchas harinas y panes', :adv5=>'Esta vitamina puede proteger de algunos tipos de anemias'},
+{:name=>'saborizante artificial a chocolate', :adv1=>'Otro nombre de la vitamina B9', :adv2=>'Vitamina muy importante durante el embarazo', :adv3=>'Ayuda a la formación de glóbulos rojos en tu organismo', :adv4=>'Vitamina B6 con la que se fortifican muchas harinas y panes', :adv5=>'Esta vitamina puede proteger de algunos tipos de anemias'},
+{:name=>'saborizante artificial', :adv1=>'Ácido presente naturalmente en manzanas', :adv2=>'Se usa para balancear la dulzura de alimentos', :adv3=>'Usado en refrescos, mermeladas de fruta y jaleas', :adv4=>'Está en las uvas, mejora el sabor del vino', :adv5=>'Puede que ayude a prevenir la fibromalgia'},
+{:name=>'carregenina', :adv1=>'Proviene de uvas, bananas y tamarindos', :adv2=>'Mejora el sabor y funciona como conservador natural', :adv3=>'Pariente del crémor tártaro usado en cocina', :adv4=>'', :adv5=>'Además de en alimentos, se usa en fotografía y barnices'},
+{:name=>'saborizante identico al natural guanabana', :adv1=>'Proviene de uvas, bananas y tamarindos', :adv2=>'Mejora el sabor y funciona como conservador natural', :adv3=>'Pariente del crémor tártaro usado en cocina', :adv4=>'', :adv5=>'Además de en alimentos, se usa en fotografía y barnices'},
+{:name=>'saborizante identico al natural de uva', :adv1=>'Líquido sin sabor, color u olor propio', :adv2=>'Principal ingrediente de muchos alimentos', :adv3=>'Conocido como el "solvente universal"', :adv4=>'Es muy saludable beber 2 lt. De agua natural al día', :adv5=>''},
+{:name=>'colorante artificial Azul 1', :adv1=>'Agua con dióxido de carbono diluído', :adv2=>'Es muy ùtil para eliminar manchas de café o de vino tinto', :adv3=>'Desde el siglo XVIII se bebe como refresco', :adv4=>'Se usa como remedio para la indigestión', :adv5=>'A veces se le llama "soda", o "agua soda"'},
+{:name=>'colorante natural Carmín', :adv1=>'Usado para espesar líquidos en alimentos procesados', :adv2=>'Algunos se usan para crear papel, planchar ropa', :adv3=>'Se usan almidones modificados para crear adhesivos', :adv4=>'Considerados seguros, aún tienen polémica respecto a su efecto en salud', :adv5=>''},
+{:name=>'aceite esencial de naranja', :adv1=>'Conocido como amarillo crepúsculo, ocaso o no. 6', :adv2=>'Usado sobre todo en mermeladas o galletas', :adv3=>'Hay reportes de alergias y efectos a la salud sin confirmar', :adv4=>'Es un derivado del petróleo', :adv5=>'Hay campañas para eliminarlo de bebidas y alimentos en Europa'},
+{:name=>'colorante artificial Amarillo 5', :adv1=>'Usado sobre todo en mermeladas o galletas', :adv2=>'Principal ingrediente de muchos alimentos', :adv3=>'Usado en refrescos, mermeladas de fruta y jaleas', :adv4=>'Vitamina B6 con la que se fortifican muchas harinas y panes', :adv5=>'Puede que ayude a prevenir la fibromalgia'},
+{:name=>'colorante natural (carmín)', :adv1=>'Sustituto de azúcar muy usado en productos no horneados', :adv2=>'Este sustituto de azúcar es destruído a altas temperaturas', :adv3=>'Los fenilcetianúricos no deben consumir esto', :adv4=>'Ha sufrido de difamación, pero es considerado seguro', :adv5=>''},
+{:name=>'fostato hidrogenado disodico', :adv1=>'Si se refiere a la de mesa, es  la sucralosa', :adv2=>'Cada persona consume al año  más de 20 kg al año en promedio', :adv3=>'No abuses: Se relaciona con la obesidad y la diabetes', :adv4=>'', :adv5=>''}
+]
+
+ingredients.each do |ingredient|
+	Ingredient.create!(ingredient)
+end
+
 Role.create([
   { :name => 'banned' }, 
   { :name => 'registered' }, 
