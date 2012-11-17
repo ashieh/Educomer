@@ -14,6 +14,13 @@ class FoodController < ApplicationController
 
 	def show
 		@food = Food.find(params[:id])
+		@ingredients = []
+		@food.ingredients.split(',').each do |name|
+			ingredient = Ingredient.find_by_name(name)
+			if ingredient
+				@ingredients.push(ingredient)
+			end
+		end
 		#@decode = ZXing.decode "#{Rails.root}/app/assets/images/#{@food.UPC}~2.JPG"
 	end
 

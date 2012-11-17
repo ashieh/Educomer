@@ -1,0 +1,10 @@
+.container
+	.row.span6{:style => "text-align: center; margin: 0 auto;"}
+		%h1{:style => "color: black;"} Welcome to Educomer!
+		%br
+		.form-search
+			.input-append
+				= form_tag food_index_path, :method => 'get' do
+					= search_field_tag :query, params[:query], :class => 'span4', :class => 'search-query', :placeholder => 'Search Food'
+					= button_tag(:type => 'submit', :class => 'btn', :id => 'submit_query') do
+						%i.icon-search
