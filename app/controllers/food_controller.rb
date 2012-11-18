@@ -25,6 +25,7 @@ class FoodController < ApplicationController
 	end
 
 	def pending
+		authorize! :pending, @user, :message => "Not authorized as an administrator."
 		@foods = Food.find_all_by_pending(true)
 		if @foods.empty?
 			flash[:notice] = "No results found"
