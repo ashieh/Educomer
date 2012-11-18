@@ -1,9 +1,13 @@
 %h1 Edit Food
--#:UPC, :econ_advice, :econ_score, :gastro_advice, :gastro_score, :ingredients, :name, :nutr_advice, :nutr_score
+-#:UPC, :econ_advice, :econ_score, :gastro_advice, :gastro_score, :ingredients, :name, :nutr_advice, :nutr_score, :pending
 = form_tag food_path(@food), :method => :put do
 	.form-inputs
 		= label :food, :name
 		= text_field :food, 'name'
+
+		-if current_user.has_role? :admin
+			= label :food, :pending, 'Pending'
+			= check_box :food, :pending, :class => 'pendingbox'
 
 		-if current_user.has_role? :admin or current_user.has_role? :allinfo
 			= label :food, :ingredients, 'Ingredients'

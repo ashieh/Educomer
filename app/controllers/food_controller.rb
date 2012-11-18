@@ -24,6 +24,17 @@ class FoodController < ApplicationController
 		#@decode = ZXing.decode "#{Rails.root}/app/assets/images/#{@food.UPC}~2.JPG"
 	end
 
+	def pending
+		@foods = Food.find_all_by_pending(true)
+		if @foods.empty?
+			flash[:notice] = "No results found"
+			redirect_to :back
+		elsif @foods.length == 1
+			#if only one result, go straight to page
+			redirect_to food_path(@foods[0])
+		end
+	end
+
 	def edit
 		if user_signed_in?
 			if current_user.has_role? :registered or current_user.has_role? :banned

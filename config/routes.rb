@@ -1,5 +1,6 @@
 Educomer::Application.routes.draw do
   match '/search', to: 'pages#search'
+  match '/pending', to: 'food#pending'
   authenticated :user do
     root :to => 'pages#home'
   end
